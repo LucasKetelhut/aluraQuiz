@@ -23,7 +23,10 @@ export default function Home() {
     <Head>
       <title>The Witcher Quiz</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="shortcut icon" href={db.ico} type="image/x-icon"/>
+      <link rel="shortcut icon" href={db.ico} type="image/x-icon" />
+      <meta property="og:image" content={db.bg} />
+      <meta property="og:title" content={db.title} />
+      <meta property="og:description" content={db.description} />
     </Head>
     <QuizBackground backgroundImage = {db.bg}>
       <QuizContainer>

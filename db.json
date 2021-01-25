@@ -1,8 +1,8 @@
 {
     "bg": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/991980/8a839c8a97c892d114d84a58cd1a599bc41e6d75.jpg",
     "ico": "https://i.pinimg.com/originals/d7/b8/c6/d7b8c6072612b126f0a05a63f28b0584.png",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "The Witcher Quiz",
+    "description": "Quiz feito para amantes da série de JOGOS da trilogia The Witcher, produzidos pela desenvolvedora CD Projekt Red",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
