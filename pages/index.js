@@ -1,16 +1,10 @@
+import Head from 'next/head';
 import styled from 'styled-components'
 import db from '../db.json'
 import Widget from '../src/components/Widget'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -25,6 +19,12 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>The Witcher Quiz</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="shortcut icon" href={db.ico} type="image/x-icon"/>
+    </Head>
     <QuizBackground backgroundImage = {db.bg}>
       <QuizContainer>
         <Widget>
@@ -32,7 +32,9 @@ export default function Home() {
             <h1>The Witcher</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Lorem ipsum dolor sit amet...</p>
+            <p>
+              Quiz feito para amantes da série de JOGOS da trilogia The Witcher, produzidos pela desenvolvedora CD Projekt Red
+            </p>
           </Widget.Content>
         </Widget>
         <Widget>
@@ -43,7 +45,8 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/lucasketelhut"/>
+      <GitHubCorner projectUrl="https://github.com/LucasKetelhut/aluraQuiz"/>
     </QuizBackground>
+    </>
   )
 }
