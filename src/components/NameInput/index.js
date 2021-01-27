@@ -7,6 +7,7 @@ const NameInput = styled.input`
   border: 1px solid ${({ theme }) => theme.colors.secondary};
   padding: 10px;
   color: ${({ theme }) => theme.colors.contrastText};
+  margin-bottom: 20px;
 
   ::placeholder {
     color: ${({ theme }) => theme.colors.secondary};

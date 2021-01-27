@@ -7,6 +7,9 @@ const ImgLogo = styled.img`
   @media screen and (max-width: 500px) {
     margin: 0;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default ImgLogo;

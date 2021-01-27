@@ -6,25 +6,27 @@
     "description": "Quiz feito para amantes da série de JOGOS da trilogia The Witcher, produzidos pela desenvolvedora CD Projekt Red",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://i.ytimg.com/vi/ekb5l4Iozcw/maxresdefault.jpg",
+        "title": "Quem é o verdadeiro regicida de The Witcher 2?",
+        "description": "Na trama do segundo jogo da trilogia, Foltest e alguns outros reis do norte são assassinados e o nosso objetivo é encontrar o culpado",
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Vernon Roche",
+          "Iorveth",
+          "Lambert",
+          "Letho"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://c4.wallpaperflare.com/wallpaper/167/681/220/witcher-3-sign-hd-wallpaper-wallpaper-thumb.jpg",
+        "title": "Qual o nome do sinal que gera um escudo mágico para Geralt?",
+        "description": "Dentro do universo The Witcher, Geralt possui alguns sinais mágicos que usa durante seus confrontos",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Quen",
+           "Axii",
+           "Aard",
+           "Igni"
         ]
       }
     ],

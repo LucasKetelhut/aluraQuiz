@@ -9,7 +9,7 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import NameInput from '../src/components/NameInput';
 import ImgLogo from '../src/components/ImgLogo';
 import QuizContainer from '../src/components/QuizContainer';
-import StartButton from '../src/components/StartButton';
+import Button from '../src/components/Button';
 
 export default function Home() {
   const router = useRouter();
@@ -36,14 +36,16 @@ export default function Home() {
               }}
               >
                 <NameInput
+                  name="userName"
                   onChange={(event) => {
                     setName(event.target.value);
                   }}
                   placeholder="Digite seu nome"
+                  value={name}
                 />
-                <StartButton type="submit" disabled={name.length === 0}>
+                <Button type="submit" disabled={name.length === 0}>
                   INICIAR QUIZ
-                </StartButton>
+                </Button>
               </form>
             </Widget.Content>
           </Widget>

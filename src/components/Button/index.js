@@ -6,7 +6,6 @@ const StartButton = styled.button`
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.primary};
   outline: none;
-  margin-top: 20px;
 
   :hover {
     background-color: #aa2e25;
