@@ -28,6 +28,42 @@
            "Aard",
            "Igni"
         ]
+      },
+      {
+        "image": "https://images.alphacoders.com/804/804073.jpg",
+        "title": "Qual escola de bruxo Geralt frequentou?",
+        "description": "Existem algumas escolas de bruxos no universo de The Witcher, local onde as crianças que são escolhidas passam a serem treinadas",
+        "answer": 1,
+        "alternatives": [
+          "Escola do Gato",
+          "Escola do Lobo",
+          "Escola do Grifo",
+          "Escola do Urso"
+        ]
+      },
+      {
+        "image": "https://sm.ign.com/t/ign_br/news/t/the-witche/the-witcher-season-2-kim-bodnia-cast-as-vesemir_qdxu.h960.jpg",
+        "title": "Qual era nome do bruxo que treinou Geralt?",
+        "description": "Geralt teve um mentor dentro de sua escola",
+        "answer": 2,
+        "alternatives": [
+          "Leo",
+          "Eskel",
+          "Vesemir",
+          "Lambert"
+        ]
+      },
+      {
+        "image": "https://www.omegascopio.com.br/wp-content/uploads/2020/06/ajrqazd57v811.png",
+        "title": "Qual destes personagens não foi submetido ao Teste das Ervas?",
+        "description": "O Teste das Ervas era feito em crianças escolhidas para se tornarem bruxos, poucos conseguiam passar pelo teste, os que passavam se tornavam mutantes",
+        "answer": 2,
+        "alternatives": [
+          "Letho",
+          "Geralt",
+          "Ciri",
+          "Karadin"
+        ]
       }
     ],
     "external": [

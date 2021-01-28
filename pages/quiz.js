@@ -9,6 +9,35 @@ import ImgLogo from '../src/components/ImgLogo';
 import QuizContainer from '../src/components/QuizContainer';
 import Widget from '../src/components/Widget';
 import Button from '../src/components/Button';
+import AlternativesForm from '../src/components/AlternativesForm';
+
+const ResultWidget = ({ results }) => (
+  <Widget>
+    <Widget.Header>
+      Resultado final
+    </Widget.Header>
+
+    <Widget.Content>
+      <p>
+        {results.filter((correct) => correct).length >= (db.questions.length / 2.0) ? 'Parabéns! Você acertou' : 'Que pena! Você acertou'}
+        {' '}
+        {`
+      ${results.filter((correct) => correct).length} 
+      de 
+      ${db.questions.length}`}
+      </p>
+      <ul>
+        {results.map((result, index) => (
+          <li key={`result__${result}`}>
+            <p>
+              {`Pergunta ${index + 1}: ${result === true ? 'Acertou' : 'Errou'}`}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </Widget.Content>
+  </Widget>
+);
 
 const LoadingWidget = () => (
   <Widget>
@@ -22,8 +51,18 @@ const LoadingWidget = () => (
   </Widget>
 );
 
-const QuestionWidget = ({ question, questionIndex, onSubmit }) => {
+const QuestionWidget = ({
+  question,
+  questionIndex,
+  onSubmit,
+  addResult,
+}) => {
+  const [selectedAlt, setSelectedAlt] = useState(undefined);
+  const [questionSubmited, setQuestionSubmited] = useState(false);
   const questionId = `question__${questionIndex}`;
+  const isCorrect = selectedAlt === question.answer;
+  const hasAlternativeSelected = selectedAlt !== undefined;
+
   return (
     <Widget>
       <Widget.Header>
@@ -49,21 +88,35 @@ const QuestionWidget = ({ question, questionIndex, onSubmit }) => {
           {question.description}
         </p>
 
-        <form onSubmit={(event) => {
+        <AlternativesForm onSubmit={(event) => {
           event.preventDefault();
-          onSubmit();
+          setQuestionSubmited(true);
+          setTimeout(() => {
+            addResult(isCorrect);
+            onSubmit();
+            setQuestionSubmited(false);
+            setSelectedAlt(undefined);
+          }, 2 * 800);
         }}
         >
           {question.alternatives.map((alt, altIndex) => {
             const alternativeId = `alternative__${altIndex}`;
+            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+            const isSelected = selectedAlt === altIndex;
+
             return (
               <Widget.Topic
                 as="label"
+                key={alternativeId}
                 htmlFor={alternativeId}
+                data-selected={isSelected}
+                data-status={questionSubmited && alternativeStatus}
               >
                 <input
+                  style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
+                  onChange={() => setSelectedAlt(altIndex)}
                   type="radio"
                 />
                 {alt}
@@ -71,10 +124,12 @@ const QuestionWidget = ({ question, questionIndex, onSubmit }) => {
             );
           })}
 
-          <Button type="submit">
+          <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-        </form>
+          {questionSubmited && isCorrect && <p>Você acertou!</p>}
+          {questionSubmited && !isCorrect && <p>Você errou!</p>}
+        </AlternativesForm>
       </Widget.Content>
     </Widget>
   );
@@ -89,9 +144,17 @@ const screenStates = {
 export default function QuizPage() {
   const router = useRouter();
   const [screenState, setScreenState] = useState(screenStates.LOADING);
+  const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questionIndex = currentQuestion;
   const question = db.questions[questionIndex];
+
+  const addResult = (result) => {
+    setResults([
+      ...results,
+      result,
+    ]);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -125,12 +188,13 @@ export default function QuizPage() {
               question={question}
               questionIndex={questionIndex}
               onSubmit={handleSubmit}
+              addResult={addResult}
             />
           )}
 
           {screenState === screenStates.LOADING && <LoadingWidget />}
 
-          {screenState === screenStates.RESULT && <div>Parabéns!</div>}
+          {screenState === screenStates.RESULT && <ResultWidget results={results} />}
 
         </QuizContainer>
         <GitHubCorner projectUrl="https://github.com/LucasKetelhut/aluraQuiz" />
