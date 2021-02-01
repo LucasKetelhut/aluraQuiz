@@ -1,83 +1,84 @@
 {
-    "bg": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/991980/8a839c8a97c892d114d84a58cd1a599bc41e6d75.jpg",
-    "ico": "https://i.pinimg.com/originals/d7/b8/c6/d7b8c6072612b126f0a05a63f28b0584.png",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/5/53/The_Witcher_video_game_series_logo.png",
-    "title": "The Witcher Quiz",
-    "description": "Quiz feito para amantes da série de JOGOS da trilogia The Witcher, produzidos pela desenvolvedora CD Projekt Red",
-    "questions": [
-      {
-        "image": "https://i.ytimg.com/vi/ekb5l4Iozcw/maxresdefault.jpg",
-        "title": "Quem é o verdadeiro regicida de The Witcher 2?",
-        "description": "Na trama do segundo jogo da trilogia, Foltest e alguns outros reis do norte são assassinados e o nosso objetivo é encontrar o culpado",
-        "answer": 3,
-        "alternatives": [
-          "Vernon Roche",
-          "Iorveth",
-          "Lambert",
-          "Letho"
-        ]
-      },
-      {
-        "image": "https://c4.wallpaperflare.com/wallpaper/167/681/220/witcher-3-sign-hd-wallpaper-wallpaper-thumb.jpg",
-        "title": "Qual o nome do sinal que gera um escudo mágico para Geralt?",
-        "description": "Dentro do universo The Witcher, Geralt possui alguns sinais mágicos que usa durante seus confrontos",
-        "answer": 0,
-        "alternatives": [
-           "Quen",
-           "Axii",
-           "Aard",
-           "Igni"
-        ]
-      },
-      {
-        "image": "https://images.alphacoders.com/804/804073.jpg",
-        "title": "Qual escola de bruxo Geralt frequentou?",
-        "description": "Existem algumas escolas de bruxos no universo de The Witcher, local onde as crianças que são escolhidas passam a serem treinadas",
-        "answer": 1,
-        "alternatives": [
-          "Escola do Gato",
-          "Escola do Lobo",
-          "Escola do Grifo",
-          "Escola do Urso"
-        ]
-      },
-      {
-        "image": "https://sm.ign.com/t/ign_br/news/t/the-witche/the-witcher-season-2-kim-bodnia-cast-as-vesemir_qdxu.h960.jpg",
-        "title": "Qual era nome do bruxo que treinou Geralt?",
-        "description": "Geralt teve um mentor dentro de sua escola",
-        "answer": 2,
-        "alternatives": [
-          "Leo",
-          "Eskel",
-          "Vesemir",
-          "Lambert"
-        ]
-      },
-      {
-        "image": "https://www.omegascopio.com.br/wp-content/uploads/2020/06/ajrqazd57v811.png",
-        "title": "Qual destes personagens não foi submetido ao Teste das Ervas?",
-        "description": "O Teste das Ervas era feito em crianças escolhidas para se tornarem bruxos, poucos conseguiam passar pelo teste, os que passavam se tornavam mutantes",
-        "answer": 2,
-        "alternatives": [
-          "Letho",
-          "Geralt",
-          "Ciri",
-          "Karadin"
-        ]
-      }
-    ],
-    "external": [
-      ""
-    ],
-    "theme": {
-      "colors": {
-        "primary": "#801313",
-        "secondary": "#8e8e8e",
-        "mainBg": "#000",
-        "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
-        "success": "#4CAF50"
-      },
-      "borderRadius": "4px"
+  "bg": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/991980/8a839c8a97c892d114d84a58cd1a599bc41e6d75.jpg",
+  "ico": "https://i.pinimg.com/originals/d7/b8/c6/d7b8c6072612b126f0a05a63f28b0584.png",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/5/53/The_Witcher_video_game_series_logo.png",
+  "title": "The Witcher Quiz",
+  "description": "Quiz feito para amantes da série de JOGOS da trilogia The Witcher, produzidos pela desenvolvedora CD Projekt Red",
+  "questions": [
+    {
+      "image": "https://i.ytimg.com/vi/ekb5l4Iozcw/maxresdefault.jpg",
+      "title": "Quem é o verdadeiro regicida de The Witcher 2?",
+      "description": "Na trama do segundo jogo da trilogia, Foltest e alguns outros reis do norte são assassinados e o nosso objetivo é encontrar o culpado",
+      "answer": 3,
+      "alternatives": [
+        "Vernon Roche",
+        "Iorveth",
+        "Lambert",
+        "Letho"
+      ]
+    },
+    {
+      "image": "https://c4.wallpaperflare.com/wallpaper/167/681/220/witcher-3-sign-hd-wallpaper-wallpaper-thumb.jpg",
+      "title": "Qual o nome do sinal que gera um escudo mágico para Geralt?",
+      "description": "Dentro do universo The Witcher, Geralt possui alguns sinais mágicos que usa durante seus confrontos",
+      "answer": 0,
+      "alternatives": [
+        "Quen",
+        "Axii",
+        "Aard",
+        "Igni"
+      ]
+    },
+    {
+      "image": "https://images.alphacoders.com/804/804073.jpg",
+      "title": "Qual escola de bruxo Geralt frequentou?",
+      "description": "Existem algumas escolas de bruxos no universo de The Witcher, local onde as crianças que são escolhidas passam a serem treinadas",
+      "answer": 1,
+      "alternatives": [
+        "Escola do Gato",
+        "Escola do Lobo",
+        "Escola do Grifo",
+        "Escola do Urso"
+      ]
+    },
+    {
+      "image": "https://sm.ign.com/t/ign_br/news/t/the-witche/the-witcher-season-2-kim-bodnia-cast-as-vesemir_qdxu.h960.jpg",
+      "title": "Qual era nome do bruxo que treinou Geralt?",
+      "description": "Geralt teve um mentor dentro de sua escola",
+      "answer": 2,
+      "alternatives": [
+        "Leo",
+        "Eskel",
+        "Vesemir",
+        "Lambert"
+      ]
+    },
+    {
+      "image": "https://www.omegascopio.com.br/wp-content/uploads/2020/06/ajrqazd57v811.png",
+      "title": "Qual destes personagens não foi submetido ao Teste das Ervas?",
+      "description": "O Teste das Ervas era feito em crianças escolhidas para se tornarem bruxos, poucos conseguiam passar pelo teste, os que passavam se tornavam mutantes",
+      "answer": 2,
+      "alternatives": [
+        "Letho",
+        "Geralt",
+        "Ciri",
+        "Karadin"
+      ]
     }
+  ],
+  "external": [
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#801313",
+      "secondary": "#8e8e8e",
+      "mainBg": "#000",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
   }
+}
