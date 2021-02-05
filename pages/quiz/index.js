@@ -10,6 +10,7 @@ import QuizContainer from '../../src/components/QuizContainer';
 import Widget from '../../src/components/Widget';
 import Button from '../../src/components/Button';
 import AlternativesForm from '../../src/components/AlternativesForm';
+import CircleLoader from '../../src/components/CircleLoader';
 
 const ResultWidget = ({ results }) => (
   <Widget>
@@ -42,11 +43,11 @@ const ResultWidget = ({ results }) => (
 const LoadingWidget = () => (
   <Widget>
     <Widget.Header>
-      Carregando...
+      Carregando quiz...
     </Widget.Header>
 
     <Widget.Content>
-      [Carregando questão]
+      <CircleLoader />
     </Widget.Content>
   </Widget>
 );
@@ -159,7 +160,7 @@ export default function QuizPage() {
   useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 800);
+    }, 3 * 800);
   }, []);
 
   const handleSubmit = () => {

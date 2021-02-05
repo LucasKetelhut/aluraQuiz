@@ -67,8 +67,9 @@
     }
   ],
   "external": [
-    "https://aluraquiz-css.omariosouto.vercel.app/",
-    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+    "https://breaking-bad-quiz.eliasnepo.vercel.app/",
+    "https://flow-quiz.garubieru.vercel.app/",
+    "https://aluraquiz-base.caioharuo.vercel.app/"
   ],
   "theme": {
     "colors": {
