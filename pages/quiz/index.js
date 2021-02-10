@@ -1,26 +1,26 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 
 import db from '../../db.json';
 import QuizBackground from '../../src/components/QuizBackground';
 import GitHubCorner from '../../src/components/GitHubCorner';
-import ImgLogo from '../../src/components/ImgLogo';
 import QuizContainer from '../../src/components/QuizContainer';
 import Widget from '../../src/components/Widget';
 import Button from '../../src/components/Button';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import CircleLoader from '../../src/components/CircleLoader';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 const ResultWidget = ({ results }) => (
   <Widget>
     <Widget.Header>
+      <BackLinkArrow href="/" />
       Resultado final
     </Widget.Header>
 
     <Widget.Content>
       <p>
-        {results.filter((correct) => correct).length >= (db.questions.length / 2.0) ? 'Parabéns! Você acertou' : 'Que pena! Você acertou'}
+        {results.filter((correct) => correct).length >= (db.questions.length / 2.0) ? 'Parabéns! Você acertou' : 'Que pena! Você acertou somente'}
         {' '}
         {`
       ${results.filter((correct) => correct).length} 
@@ -67,6 +67,7 @@ const QuestionWidget = ({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${` ${db.questions.length}`}`}
         </h3>
@@ -128,8 +129,6 @@ const QuestionWidget = ({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {questionSubmited && isCorrect && <p>Você acertou!</p>}
-          {questionSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -143,7 +142,6 @@ const screenStates = {
 };
 
 export default function QuizPage() {
-  const router = useRouter();
   const [screenState, setScreenState] = useState(screenStates.LOADING);
   const [results, setResults] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -175,15 +173,6 @@ export default function QuizPage() {
     <>
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
-          <ImgLogo
-            src={db.logo}
-            alt="Logotipo The Witcher"
-            onClick={(event) => {
-              event.preventDefault();
-              router.push('/');
-            }}
-          />
-
           {screenState === screenStates.QUIZ && (
             <QuestionWidget
               question={question}

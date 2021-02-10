@@ -4,7 +4,8 @@ import styled from 'styled-components';
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.colors.secondary}40;
-  padding: 20px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   border-radius: 4px; 

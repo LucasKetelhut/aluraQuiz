@@ -42,8 +42,8 @@
       ]
     },
     {
-      "image": "https://sm.ign.com/t/ign_br/news/t/the-witche/the-witcher-season-2-kim-bodnia-cast-as-vesemir_qdxu.h960.jpg",
-      "title": "Qual era nome do bruxo que treinou Geralt?",
+      "image": "https://preview.redd.it/vndhky4a8ekz.png?width=960&crop=smart&auto=webp&s=6b3db25be994862119fca0ed256be41727d6c917",
+      "title": "Por quem Geralt foi treinado?",
       "description": "Geralt teve um mentor dentro de sua escola",
       "answer": 2,
       "alternatives": [
@@ -64,12 +64,48 @@
         "Ciri",
         "Karadin"
       ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/66/0b/26/660b26a66a50f8b11e23d91af0014e9c.jpg",
+      "title": "Qual feiticeira teve seus olhos arrancados a mando de Radovid?",
+      "description": "Radovid era preconceituoso e espalhava o ódio contra os não-humanos, principalmente magos e feiticeiras",
+      "answer": 0,
+      "alternatives": [
+        "Filippa Eilhart",
+        "Fringilla Vigo",
+        "Triss Merigold",
+        "Keira Metz"
+      ]
+    },
+    {
+      "image": "https://s1.1zoom.me/big0/935/307503-blackangel.jpg",
+      "title": "Qual foi o primeiro grande monstro que Geralt teve de enfrentar em The Witcher 2?",
+      "description": "Quando chega em Flotsam, Geralt tem a oportunidade de enfrentar o/a...",
+      "answer": 3,
+      "alternatives": [
+        "Letho",
+        "Saesenthessis",
+        "Draug",
+        "Kayran"
+      ]
+    },
+    {
+      "image": "https://cdn.mos.cms.futurecdn.net/x3cvbfgpp4nWcwucVqEs3H-970-80.jpg.webp",
+      "title": "No primeiro jogo temos a morte precoce de um aprendiz que estava em treinamento na Escola do Lobo, qual seu nome?",
+      "description": "É um dos muitos orfãos da Guerra Nilfgaardiana, Vesemir o protegeu em Kaer Morhen e começou a treiná-lo como bruxo",
+      "answer": 3,
+      "alternatives": [
+        "Raven",
+        "Barmin",
+        "Berengar",
+        "Leo"
+      ]
     }
   ],
   "external": [
     "https://breaking-bad-quiz.eliasnepo.vercel.app/",
     "https://flow-quiz.garubieru.vercel.app/",
-    "https://aluraquiz-base.caioharuo.vercel.app/"
+    "https://alura-quiz.ricmaloy.vercel.app"
   ],
   "theme": {
     "colors": {

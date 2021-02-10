@@ -9,6 +9,7 @@ import Widget from '../../components/Widget';
 import Button from '../../components/Button';
 import AlternativesForm from '../../components/AlternativesForm';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import CircleLoader from '../../components/CircleLoader';
 
 const ResultWidget = ({ results }) => (
   <Widget>
@@ -18,7 +19,7 @@ const ResultWidget = ({ results }) => (
 
     <Widget.Content>
       <p>
-        {results.filter((correct) => correct).length >= (db.questions.length / 2.0) ? 'Parabéns! Você acertou' : 'Que pena! Você acertou'}
+        {results.filter((correct) => correct).length >= (db.questions.length / 2.0) ? 'Parabéns! Você acertou' : 'Que pena! Você acertou somente'}
         {' '}
         {`
       ${results.filter((correct) => correct).length} 
@@ -45,7 +46,7 @@ const LoadingWidget = () => (
     </Widget.Header>
 
     <Widget.Content>
-      [Carregando questão]
+      <CircleLoader />
     </Widget.Content>
   </Widget>
 );
